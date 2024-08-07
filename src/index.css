@@ -4,6 +4,8 @@
 @tailwind utilities;
 
 
+
+
 .icon {
   @apply  font-semibold cursor-pointer absolute;
   transition: transform 0.3s ease;
