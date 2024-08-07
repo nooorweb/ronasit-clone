@@ -67,7 +67,11 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12"
+<<<<<<< HEAD
                 src="./images/pic1.jpg"
+=======
+                src="./images/avatar-1.jpg"
+>>>>>>> 9c646971e8a38864e44a797a0710d6b497bd0f0a
                 alt="Craig Barber"
               />
               <p className="font-bold text-sm mt-4">Craig Barber</p>
@@ -76,7 +80,11 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12"
+<<<<<<< HEAD
                 src="./images/pic2.jpg"
+=======
+                src="./images/avatar-2.jpg"
+>>>>>>> 9c646971e8a38864e44a797a0710d6b497bd0f0a
                 alt="Rivget Raut"
               />
               <p className="font-bold text-sm mt-4">Rivget Raut</p>
@@ -85,7 +93,11 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12"
+<<<<<<< HEAD
                 src="./images/pic4.jpg"
+=======
+                src="./images/avatar-4.jpg"
+>>>>>>> 9c646971e8a38864e44a797a0710d6b497bd0f0a
                 alt="Adrian Lunga"
               />
               <p className="font-bold text-sm mt-4">Adrian Lunga</p>
