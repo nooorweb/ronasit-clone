@@ -15,7 +15,7 @@ function App() {
 <Home/>
 <Calculater/>
 <Home2/>
-<Footer/>
+
 </div>
 )
 }

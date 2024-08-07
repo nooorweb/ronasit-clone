@@ -4,8 +4,7 @@ import Protfolio from './Protfolio'
 import Review from './Review'
 import Client from './Client'
 import Accordiyan from './Accordiyan'
-
-
+import Footer from './Footer'
 
 
 const Home2 = () => {
@@ -17,7 +16,7 @@ const Home2 = () => {
  <Review/>  
  <Accordiyan/>
 
-
+ <Footer/>
 
     </div>
   )

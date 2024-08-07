@@ -6,6 +6,8 @@
 
 
 
+
+
 .icon {
   @apply  font-semibold cursor-pointer absolute;
   transition: transform 0.3s ease;
@@ -51,4 +53,14 @@
   /* background-color: lightpink; */
   max-height: fit-content; 
   transition: max-height 0.5s ease-in;
+}
+
+
+
+
+.footer a{
+
+
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
 }
