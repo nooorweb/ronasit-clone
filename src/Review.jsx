@@ -37,7 +37,7 @@ const Review = () => {
             <div className="border border-solid border-gray-300 hover:border-black rounded-full p-5 transition ease-in-out duration-500 hover:scale-105  img">
               <img
                 className="object-cover max-w-7 transition-transform ease-in-out duration-500"
-                src="../src/assets/img/upwork.png"
+                src="./images/upwork.png"
                 alt=""
               />
             </div>
@@ -99,7 +99,7 @@ const Review = () => {
             <div className="border border-solid border-gray-300 hover:border-black rounded-full p-5 transition ease-in-out duration-500 hover:scale-105  img cursor-pointer ">
               <img
                 className="object-cover max-w-7 transition-transform ease-in-out duration-500"
-                src="../src/assets/img/upwork.png"
+                src="./images/upwork.png"
                 alt=""
               />
             </div>
@@ -120,7 +120,7 @@ const Review = () => {
             <div className="border border-solid border-gray-300 hover:border-black rounded-full p-5 transition ease-in-out duration-500 hover:scale-105  img cursor-pointer ">
               <img
                 className="object-cover max-w-7 transition-transform ease-in-out duration-500"
-                src="../src/assets/img/goggle.png"
+                src="./images/goggle.png"
                 alt=""
               />
             </div>
@@ -173,7 +173,7 @@ const Review = () => {
         <Feather/>
        
           <div className="text-center">
-          <img src="../src/assets/img/award.png " width={120}></img>
+          <img src="./images/award.png " width={120}></img>
 
           <p className="text-xs pt-2">HONORABLE MENTION</p>
           <p className="text-sm font-light">Winter 2024</p>
