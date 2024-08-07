@@ -58,7 +58,7 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12 "
-                src="./public/images/avt.webp"
+                src="./images/avt.webp"
                 alt="Bob Glazebrook"
               />
               <p className="font-bold text-sm mt-4">Bob Glazebrook</p>
@@ -67,7 +67,7 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12"
-                src="./public/images/avatar-1.JPG"
+                src="./images/avatar-1.JPG"
                 alt="Craig Barber"
               />
               <p className="font-bold text-sm mt-4">Craig Barber</p>
@@ -76,7 +76,7 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12"
-                src="./public/images/avatar-2.JPG"
+                src="./images/avatar-2.JPG"
                 alt="Rivget Raut"
               />
               <p className="font-bold text-sm mt-4">Rivget Raut</p>
@@ -85,7 +85,7 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12"
-                src="./public/images/avatar-4.JPG"
+                src="./images/avatar-4.JPG"
                 alt="Adrian Lunga"
               />
               <p className="font-bold text-sm mt-4">Adrian Lunga</p>
