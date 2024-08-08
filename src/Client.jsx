@@ -58,7 +58,7 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12 "
-                src="../src/assets/img/avt.WEBP"
+                src="./images/avt.webp"
                 alt="Bob Glazebrook"
               />
               <p className="font-bold text-sm mt-4">Bob Glazebrook</p>
@@ -67,7 +67,11 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12"
-                src="../src/assets/img/avatar-1.JPG"
+
+                src="./images/pic1.jpg"
+
+              
+
                 alt="Craig Barber"
               />
               <p className="font-bold text-sm mt-4">Craig Barber</p>
@@ -76,7 +80,11 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12"
-                src="../src/assets/img/avatar-2.JPG"
+
+                src="./images/pic2.jpg"
+
+            
+
                 alt="Rivget Raut"
               />
               <p className="font-bold text-sm mt-4">Rivget Raut</p>
@@ -85,7 +93,11 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12"
-                src="../src/assets/img/avatar-4.JPG"
+
+                src="./images/pic4.jpg"
+
+            
+
                 alt="Adrian Lunga"
               />
               <p className="font-bold text-sm mt-4">Adrian Lunga</p>
@@ -124,7 +136,7 @@ const Client = () => {
           <div>
             <p className="flex items-center pb-8">
               <span className="flex gap-5">
-            {/* {BigStar} */}<BigStar/>
+           <BigStar/>
                 <p className="border-l-2 text-2xl pl-5">5.0</p>
               </span>
             </p>
