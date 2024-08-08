@@ -4,6 +4,19 @@
 @tailwind utilities;
 
 
+.light-mode {
+  --font-color: #101212;
+  --body-bg-color: #ffffff;
+}
+.dark-mode {
+  --font-color: #ffffff;
+  --body-bg-color: #03030F;
+}
+
+
+
+
+
 
 
 
@@ -64,3 +77,15 @@
   color: rgb(0, 0, 0);
   font-size: 1rem;
 }
+
+
+
+/* .bg-dark {
+  background-color: #03030F;
+  color: #ffff;
+}
+
+.bg-light {
+  background-color: #ffffff;
+  color: #000000;
+} */

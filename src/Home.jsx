@@ -7,9 +7,15 @@ import Development from './Development'
 import Maintain from './Maintain'
 import Sidebar from './Sidebar'
 
+
+
+
 const Home = () => {
+  
   return (
-    <div className='px-20  '  >
+    <div className='px-20'>
+
+
       <Sidebar/>
    <Hero/>
 

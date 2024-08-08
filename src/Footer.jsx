@@ -43,8 +43,8 @@ const Footer = () => {
             <a href="/#">Backend development services</a>
             <a href="/#">Custom enterprise software</a>
             <a href="/#">Dedicated development teams</a>
-            <div className=" mt-32 flex flex-col gap-2">
-              <p className="font-semibold pb-3">Write</p>
+            <div className=" mt-6 flex flex-col gap-2">
+              <p className="font-semibold ">Write</p>
               <a href="/#">hello@ronasit.com</a>
               <a href="/#">TeleGram</a>
               <a href="/#">Whatsapp</a>

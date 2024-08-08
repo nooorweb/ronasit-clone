@@ -1,10 +1,18 @@
 import React from "react";
-import { useRef } from "react";
+
+
+
+
+
+
+
 
 const Hero = () => {
  
+
+
   return (
-    <div className="flex items-center justify-center gap-32 flex-col  h-96 pt-56  pb-64">
+    <div className="flex items-center justify-center gap-32 flex-col h-96 pt-56 pb-64 ">
       <div>
         <h1 className="flex items-center gap-1 text-5xl font-medium">
           <span className="flex flex-col gap-3 py-5 items-center justify-center  relative ">
@@ -33,7 +41,7 @@ const Hero = () => {
           <span className=" flex flex-col items-center justify-center  border-b-2 border-gray-600 border-dashed dashed   pb-3">
             Development.
           </span>
-          <span className="flex flex-col items-center justify-center">
+          <span className="flex flex-col items-center justify-center ">
             Maintenance.
             <svg
               className=""

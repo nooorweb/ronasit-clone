@@ -7,7 +7,13 @@ import Accordiyan from './Accordiyan'
 import Footer from './Footer'
 
 
+
+
+
 const Home2 = () => {
+
+
+
   return (
     <div className='px-20 '  >
        <AsCompany/>     
