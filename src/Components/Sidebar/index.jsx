@@ -1,5 +1,5 @@
 import React from 'react';
-import Btn from './Btnn';
+
 
 
 const Slinks = [
@@ -19,13 +19,12 @@ const Sidebar = () => {
 {Slinks.map((link)=>{
 
 return(
-  <Btn className="'bg-black text-white w-10 h-10 rounded-full flex justify-center items-center bg-black">
-  <a  href='/#' >
+<button className="bg-secondary text-primary w-10 h-10 rounded-full flex justify-center items-center">
+  <a href="/#">
+    <i className={link.iconClass}></i>
+  </a>
+</button>
 
-
-  <i className={link.iconClass}></i>
-</a>
-</Btn>
 )
 
 })}

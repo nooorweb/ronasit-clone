@@ -27,7 +27,7 @@ Aos.init({
           Constant updating, modifying, and re-assessing of software is one way to make them user-oriented and up-to-date. Through such a service, we give businesses the technological support they need.
           </p>
 
-          <button className="py-5 px-10   text-black rounded-full border-2 border-slate-400 w-fit">
+          <button className="py-5 px-10    text-secondary rounded-full border-2 border-slate-400 w-fit">
             View More
           </button>
         </div>

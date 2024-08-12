@@ -30,7 +30,7 @@ Aos.init({
             provide a high level of data security.
           </p>
 
-          <button className="py-5 px-10   text-black rounded-full border-2 w-fit">
+          <button className="py-5 px-10   text-secondary rounded-full border-2 w-fit">
             View More
           </button>
         </div>

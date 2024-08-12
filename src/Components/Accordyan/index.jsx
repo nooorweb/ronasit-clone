@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./index.css";
+import "../index.css";
 
 const Accordiyan = () => {
   const [isOpen, setIsOpen] = useState(Array(6).fill(false));

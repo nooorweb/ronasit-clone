@@ -9,5 +9,25 @@ html , body{
     height: 100%;
     /* background-color: green; */
     width: 100%;
-  
+ 
 }
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #03030F;
+    /* --font-color:#000000; */
+  }
+  
+  body {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+  
+  .dark-mode {
+    --primary-color: #03030F; 
+    --secondary-color: #ffffff; 
+  }
+
+ 
+
+  

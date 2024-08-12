@@ -2,21 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+a{
 
-
-.light-mode {
-  --font-color: #101212;
-  --body-bg-color: #ffffff;
-}
-.dark-mode {
-  --font-color: #ffffff;
-  --body-bg-color: #03030F;
+  transition: all ease-in-out 200ms ;
 }
 
+a:hover{
 
 
-
-
+  color: #26a0f8
+  
+}
 
 
 
@@ -69,23 +65,3 @@
 }
 
 
-
-
-.footer a{
-
-
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-}
-
-
-
-/* .bg-dark {
-  background-color: #03030F;
-  color: #ffff;
-}
-
-.bg-light {
-  background-color: #ffffff;
-  color: #000000;
-} */

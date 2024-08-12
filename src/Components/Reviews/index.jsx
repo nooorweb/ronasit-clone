@@ -1,8 +1,8 @@
 import React from "react";
-import { Starsmall} from "./Constant";
+import { Starsmall} from "../Svgs/index.jsx";
 
-import { Feather } from "./Constant";
-import { Clutch } from "./Constant";
+import { Feather } from "../Svgs/index.jsx";
+import { Clutch } from "../Svgs/index.jsx";
 const Review = () => {
   return (
     <>
@@ -16,11 +16,10 @@ const Review = () => {
             reviews<br></br> across 5 platforms
           </p>
         </div>
-
         <div className="  max-w-60   text-left">
           <h2 className="text-counter-size  mb-2.5">Top 50</h2>
           <p className="text-2xl  ">app development companies on</p>
-          <img src="" alt="" />
+          {/* <img src="" alt="" /> */}
         </div>
         <div className="  max-w-80    text-left ">
           <h2 className="text-counter-size  mb-2.5">
@@ -37,7 +36,7 @@ const Review = () => {
             <div className="border border-solid border-gray-300 hover:border-black rounded-full p-5 transition ease-in-out duration-500 hover:scale-105  img">
               <img
                 className="object-cover max-w-7 transition-transform ease-in-out duration-500"
-                src="./images/upwork.png"
+                src="./assets/images/upwork.png"
                 alt=""
               />
             </div>
@@ -99,7 +98,7 @@ const Review = () => {
             <div className="border border-solid border-gray-300 hover:border-black rounded-full p-5 transition ease-in-out duration-500 hover:scale-105  img cursor-pointer ">
               <img
                 className="object-cover max-w-7 transition-transform ease-in-out duration-500"
-                src="./images/upwork.png"
+                src="./assets/images/upwork.png"
                 alt=""
               />
             </div>
@@ -120,7 +119,7 @@ const Review = () => {
             <div className="border border-solid border-gray-300 hover:border-black rounded-full p-5 transition ease-in-out duration-500 hover:scale-105  img cursor-pointer ">
               <img
                 className="object-cover max-w-7 transition-transform ease-in-out duration-500"
-                src="./images/goggle.png"
+                src="./assets/images/goggle.png"
                 alt=""
               />
             </div>
@@ -173,7 +172,7 @@ const Review = () => {
         <Feather/>
        
           <div className="text-center">
-          <img src="./images/award.png " width={120}></img>
+          <img src="./assets/images/award.png " width={120}></img>
 
           <p className="text-xs pt-2">HONORABLE MENTION</p>
           <p className="text-sm font-light">Winter 2024</p>

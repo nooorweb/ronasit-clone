@@ -6,6 +6,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Protfolio = () => {
   useEffect(() => {
+
+    
     let ctx = gsap.context(() => {
       gsap.set(".photo:not(:first-child)", { opacity: 0, scale: 0.5 });
 
@@ -23,7 +25,7 @@ const Protfolio = () => {
         pin: ".right",
         animation: animation,
         scrub: true,
-        markers: true,
+       
       });
     });
     return () => ctx.revert();
@@ -41,7 +43,7 @@ const Protfolio = () => {
             A redesign concept of the Bank of America's mobile app
           </h3>
           <p className="opacity-40">mobile design</p>
-          <button className="py-5 px-10 text-black rounded-full border-2 border-slate-400 w-fit">
+          <button className="py-5 px-10 text-secondary rounded-full border-2 border-slate-400 w-fit">
             View More
           </button>
         </div>
@@ -54,7 +56,7 @@ const Protfolio = () => {
             An employee engagement and training web app
           </h3>
           <p className="opacity-40">web design develoment</p>
-          <button className="py-5 px-10 text-black rounded-full border-2 border-slate-400 w-fit">
+          <button className="py-5 px-10 text-secondary rounded-full border-2 border-slate-400 w-fit">
             View More
           </button>
         </div>
@@ -65,7 +67,7 @@ const Protfolio = () => {
             mentors
           </h3>
           <p className="opacity-40">mobile design</p>
-          <button className="py-5 px-10 text-black rounded-full border-2 border-slate-400 w-fit">
+          <button className="py-5 px-10 text-secondary rounded-full border-2 border-slate-400 w-fit">
             View More
           </button>
         </div>
@@ -75,7 +77,7 @@ const Protfolio = () => {
             An on-demand food delivery App
           </h3>
           <p className="opacity-40">mobile design</p>
-          <button className="py-5 px-10 text-black rounded-full border-2 border-slate-400 w-fit">
+          <button className="py-5 px-10 text-secondary rounded-full border-2 border-slate-400 w-fit">
             View More
           </button>
         </div>

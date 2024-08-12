@@ -7,13 +7,15 @@ module.exports = {
     extend: {
       colors: {
         customBlue: '#26a0f8',
+        primary: 'var(--primary-color)',
+        secondary: 'var(--secondary-color)',
       },
       fontSize: {
-        'psize': '2.5em',       // Custom font size
-        'rh-size': '3.25em',    // Custom font size
-        'client-size': '2.75em',// Custom font size
-        'counter-size': '3.25em',// Custom font size
-        'acy-size': '1.875em'// Custom font size
+        'psize': '2.5em',      
+        'rh-size': '3.25em',    
+        'client-size': '2.75em',
+        'counter-size': '3.25em',
+        'acy-size': '1.875em'
         
       },
       spacing: {

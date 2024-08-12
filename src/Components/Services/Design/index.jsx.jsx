@@ -25,7 +25,7 @@ duration:1000
           We work hard to create eye-catching and intuitive interface designs
           that provide users with an enjoyable experience.
         </p>
-        <button className="py-5 px-10 text-black rounded-full border-2 border-slate-400 w-fit">
+        <button className="py-5 px-10 text-secondary rounded-full border-2 border-slate-400 w-fit">
           View More
         </button>
       </div>

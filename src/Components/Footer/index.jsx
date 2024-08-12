@@ -3,15 +3,15 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="mt-32">
+      <div className="mt-32 bg-primary text-secondary">
         <p className="pb-12">Contacts</p>
         <h1 className="font-semibold text-7xl">Get In Touch </h1>
 
         <div className="  grid grid-cols-4 mt-24 gap-10 pl-5">
       
-          <div className="flex flex-col gap-6 footer">
+          <div className="flex flex-col gap-6 footer ">
             <p className="font-semibold">Services for startups</p>
-            <a href="/#"> MVP Development</a>
+            <a  href="/#"> MVP Development</a>
             <a href=""> Design Services </a>
             <a href=""> App development services </a>
             <a href="">CTO services </a>

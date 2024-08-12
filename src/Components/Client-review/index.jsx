@@ -2,7 +2,7 @@
 import gsap from "gsap";
 import React, { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { BigStar } from "./Constant";
+import { BigStar } from "../Svgs/index.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,7 +19,7 @@ const Client = () => {
         end: "bottom bottom",
         pin: ".left",
         scrub: true,
-        markers: true,
+       
       },
     });
 
@@ -58,7 +58,7 @@ const Client = () => {
             <div className=" text-left w-44">
               <img
                 className="rounded-full w-12 h-12 "
-                src="./images/avt.webp"
+                src="./assets/images/avt.webp"
                 alt="Bob Glazebrook"
               />
               <p className="font-bold text-sm mt-4">Bob Glazebrook</p>
@@ -68,7 +68,7 @@ const Client = () => {
               <img
                 className="rounded-full w-12 h-12"
 
-                src="./images/pic1.jpg"
+                src="./assets/images/pic1.jpg"
 
               
 
@@ -81,7 +81,7 @@ const Client = () => {
               <img
                 className="rounded-full w-12 h-12"
 
-                src="./images/pic2.jpg"
+                src="./assets/images/pic2.jpg"
 
             
 
@@ -94,7 +94,7 @@ const Client = () => {
               <img
                 className="rounded-full w-12 h-12"
 
-                src="./images/pic4.jpg"
+                src="./assets/images/pic4.jpg"
 
             
 

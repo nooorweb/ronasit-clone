@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Home from './Home';
-import Header from './Header';
-import Calculater from './Calculater';
-import Home2 from './Home2';
-import Footer from './Footer';
+import Home from './Components/Home/Home';
+import Header from './Components/Header/index.jsx'
+import Calculater from './Components/CalculaterSec/index.jsx';
+import Home2 from './Components/Home/Home2';
+
 
 
 function App() {
