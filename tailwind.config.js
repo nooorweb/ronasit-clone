@@ -9,13 +9,22 @@ module.exports = {
         customBlue: '#26a0f8',
         primary: 'var(--primary-color)',
         secondary: 'var(--secondary-color)',
-      },
+        transitionTimingFunction: {
+          'ease-out-custom': 'cubic-bezier(0.2, 0.8, 0.2, 1)',
+        },
+        transitionDuration: {
+          'slow': '2000ms', // 2 seconds for slower transition
+        },
+      }
+      ,
+      
       fontSize: {
         'psize': '2.5em',      
         'rh-size': '3.25em',    
         'client-size': '2.75em',
         'counter-size': '3.25em',
-        'acy-size': '1.875em'
+        'acy-size': '1.875em',
+        'circle-size': '11px'
         
       },
       spacing: {

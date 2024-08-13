@@ -1,23 +1,22 @@
-import React from 'react';
-import './App.css';
-import Home from './Components/Home/Home';
-import Header from './Components/Header/index.jsx'
-import Calculater from './Components/CalculaterSec/index.jsx';
-import Home2 from './Components/Home/Home2';
+import React from "react";
+import "./App.css";
+import Home from ".//Components/layout/Home/Home";
+import Header from "./Components/layout/Header/index.jsx";
+import Calculater from "./Components/layout/CalculaterSec/index.jsx";
+import Home2 from "./Components/layout/Home/Home2";
+// import MouseFollower from "./Components/layout/Mouse.jsx";
 
-
+import MouseFollower from "./Components/layout/MouseFollower.jsx";
 
 function App() {
   return (
-  
-      <div>
-        <Header /> 
-        <Home />
-        <Calculater />
-        <Home2 />
-      
-      </div>
-
+    <div>
+      <MouseFollower />
+      <Header />
+      <Home />
+      <Calculater />
+      <Home2 />
+    </div>
   );
 }
 

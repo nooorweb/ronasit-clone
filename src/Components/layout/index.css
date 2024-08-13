@@ -1,0 +1,60 @@
+/* src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+a {
+  transition: all ease-in-out 200ms;
+}
+
+a:hover {
+  color: #26a0f8;
+}
+
+.icon {
+  @apply font-semibold cursor-pointer absolute;
+  transition: transform 800ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: #ef4335;
+  font-weight: 500;
+  transform: rotate(-6deg);
+}
+
+.icon.open {
+  transform: rotate(180deg);
+}
+
+.icon::before {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+}
+
+.icon.open::before {
+  content: "\f068";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+
+.fa-2xl {
+  font-size: 2rem; /* Adjust as needed */
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 800ms ease;
+}
+
+.accordion-content.open {
+  max-height: fit-content;
+  transition: max-height 800ms ease;
+}
+
+/* 
+
+.custom-transition {
+  transition: transform 3s cubic-bezier(0.2, 0.8, 0.2, 1);
+} */
