@@ -9,14 +9,14 @@ import Sidebar from "../Sidebar/index.jsx";
 
 const Home = () => {
   return (
-    <div className="px-20">
-      <Sidebar />
-      <Hero />
-      <Intro />
-      <Service />
-      <Design />
+    <div className="md:px-20 px-4">
+     <div className="hidden md:block"> <Sidebar /></div>
+      <Hero /> 
+       <Intro />  
+       <Service />
+       <Design />
       <Development />
-      <Maintain />
+      <Maintain />  
     </div>
   );
 };

@@ -24,13 +24,22 @@ module.exports = {
         'client-size': '2.75em',
         'counter-size': '3.25em',
         'acy-size': '1.875em',
-        'circle-size': '11px'
+        'acy-sizeres': '1.7em',
+        'circle-size': '11px',
+        'service-size': '1.7rem',
+        'services-size': '2.57rem',
+            'footer-size': '1rem'
+        
+
         
       },
       spacing: {
         'customtop': '-20px',
         'left': '-40px',
-         'leftplay':"56px"
+         'leftplay':"56px",
+         'darkheight':"15px",
+         'border':'1px'
+
 
       },
       minHeight: {
@@ -42,7 +51,9 @@ module.exports = {
       },
       gridTemplateColumns: {
         'cols-layout': '1fr 1fr 4fr 1fr 1fr',
+    
         'acc-cols': '0.5fr 1fr 1fr',
+        'acc-colres': ' 1fr '
       },
       gridTemplateRows: {
         'rows-layout': '100px 100px 100px',

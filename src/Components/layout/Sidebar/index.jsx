@@ -10,7 +10,11 @@ const Slinks = [
 
 const Sidebar = () => {
   return (
-    <div className="fixed left-5 z-30 flex flex-col gap-2 bottom-10">
+    <div className="">
+
+
+
+    <div className="md:fixed  left-5 md:z-40 flex md:flex-col gap-2 bottom-10   md:opacity-1 mt-10"> 
       {Slinks.map((link) => {
         return (
           <button className="bg-secondary text-primary w-10 h-10 rounded-full flex justify-center items-center">
@@ -20,6 +24,7 @@ const Sidebar = () => {
           </button>
         );
       })}
+    </div>
     </div>
   );
 };

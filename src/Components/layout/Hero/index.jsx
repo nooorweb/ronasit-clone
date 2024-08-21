@@ -52,8 +52,8 @@ const Hero = () => {
         ></video>
       </div>
       <div>
-        <h1 className="flex items-center gap-1 text-5xl font-medium">
-          <span className="flex flex-col gap-3 py-5 items-center justify-center  relative ">
+        <h1 className="flex items-center gap-1 text-5xl font-medium flex-wrap">
+          <span className="  flex flex-col gap-3 py-5 items-center justify-center  relative ">
             Design.
             <svg
               className=" absolute w-full bottom-0"
@@ -76,11 +76,14 @@ const Hero = () => {
               </defs>
             </svg>
           </span>
+
+
           <span className=" flex flex-col items-center justify-center  border-b-2 border-gray-600 border-dashed dashed   pb-3">
             Development.
           </span>
           <span className="flex flex-col items-center justify-center ">
             Maintenance.
+            <div className="flex justify-center w-48 align-center ">
             <svg
               className=""
               xmlns="http://www.w3.org/2000/svg"
@@ -101,6 +104,29 @@ const Hero = () => {
                 </clipPath>
               </defs>
             </svg>
+            <svg
+              className=""
+              xmlns="http://www.w3.org/2000/svg"
+              width="228"
+              height="11"
+              fill="none"
+            >
+              <g clip-path="url(#a)">
+                <path
+                  stroke="gray"
+                  stroke-width="2"
+                  d="M133 5.5q-9.5 7-19 0t-19 0-19 0-19 0-19 0-19 0-19 0-19 0-19 0 M246 5.5q-9.5 7-19 0t-19 0-19 0-19 0-19 0-19 0-19 0-19 0-19 0"
+                />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h228v11H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+            </div>
+       
+
           </span>
         </h1>
       </div>
@@ -123,12 +149,12 @@ const Hero = () => {
          a 45,45 0 1,1 -90,0"
             fill="transparent"
           />
-          <text className="text-xs font-semibold ">
+          <text className="text-xs font-semibold  ">
             <textPath
               href="#text-path"
               startOffset="50%"
               textAnchor="middle"
-              className="tracking-widest font-normal text-circle-size  "
+              className="tracking-widest font-normal text-circle-size " 
             >
               Watch our showreel • Watch our showreel •
             </textPath>

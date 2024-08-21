@@ -1,0 +1,10 @@
+/* Initially hide the 'allservices' div */
+.allservices {
+    display: none;
+  }
+  
+  /* Show 'allservices' when hovering over the parent 'li' */
+  .hover-trigger:hover .allservices {
+    display: block;
+  }
+  

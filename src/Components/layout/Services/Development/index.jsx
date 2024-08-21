@@ -9,30 +9,32 @@ const Developement = () => {
     });
   }, []);
   return (
-    <div className="flex gap-32 justify-between py-15 ">
-      <div className="flex flex-col gap-10" data-aos="fade-up">
+    <div className="flex mt-20   justify-between py-15 flex-col md:flex-row  " data-aos="fade-up">
+      <div className="flex flex-col gap-10" data-aos="">
         <p>02</p>
 
-        <h2 className="text-5xl font-medium">Development</h2>
+        <h2 className="text-services-size md:text-5xl font-medium">Development</h2>
       </div>
 
-      <div className="mt-32 max-w-2xl flex flex-col gap-20 ">
-        <div className="px-8 flex flex-col gap-10  " data-aos="fade-up">
-          <p className="text-2xl ">
+      <div className="mt-10 md:mt-32 max-w-2xl bg-gre flex flex-col gap-20 ">
+
+        
+        <div className="md:px-8 flex flex-col gap-10" >
+          <p className="text-xl md:text-2xl">
             When working on a project, we not only establish scalable
             architecture design using the best industry practices but also
             provide a high level of data security.
           </p>
 
-          <button className="py-5 px-10   text-secondary rounded-full border-2 w-fit">
+          <button className="py-5 px-10   text-secondary rounded-full border-2 w-fit hover:bg-customBlue hover:text-white transition-all duration-700 ease-in-out cursor-pointer">
             View More
           </button>
         </div>
 
-        <div className=" grid grid-cols-2 grid-rows-2" data-aos="fade-up">
-          <div className=" group flex flex-col gap-6 pb-28 p-5 col-start-1 col-end-2 row-start-1 row-end-2 relative ">
+        <div className=" grid gap-6  md:grid-cols-1 md:grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 md:gap-0" data-aos="fade-up">
+          <div className="     group flex flex-col gap-6  pb-28 p-5  relative ">
             <img
-              className="absolute left-0 bottom-0 object-center w-full h-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ease-in-out cursor-pointer"
+              className="absolute left-0 bottom-0 object-cover w-full h-full inset-0 opacity-1 md:opacity-0   group-hover:opacity-100 transition-opacity duration-200 ease-in-out cursor-pointer"
               src="https://ronasit.com/_next/image/?url=%2Fimg%2Fhome%2Fweb-services-light.webp&w=1920&q=75"
               alt="Decorative Image"
             />
@@ -45,9 +47,9 @@ const Developement = () => {
               confidential data.
             </p>
           </div>
-          <div className=" group flex flex-col gap-6 pb-28 p-5  col-start-2 col-end-3 row-start-1 row-end-2 relative">
+          <div className=" group  flex flex-col gap-6 pb-28 p-5  relative">
             <img
-              className="absolute left-0 bottom-0 object-center w-full h-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ease-in-out cursor-pointer"
+              className="absolute left-0 bottom-0 object-cover w-full h-full inset-0 opacity-1 md:opacity-0   group-hover:opacity-100 transition-opacity duration-200 ease-in-out cursor-pointer"
               src="https://ronasit.com/_next/image/?url=%2Fimg%2Fhome%2Fnative-light.webp&w=1920&q=75"
               alt="Decorative Image"
             />
@@ -58,9 +60,9 @@ const Developement = () => {
               because we follow Apple and Google guidelines.
             </p>
           </div>
-          <div className="group flex flex-col gap-6  pb-28 p-5 col-start-1 col-end-2 row-start- row-end-3 relative">
+           <div className=" group flex flex-col gap-6 pb-28 p-5  relative">
             <img
-              className="absolute left-0 bottom-0 object-center w-full h-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ease-in-out cursor-pointer"
+              className="absolute left-0 bottom-0 object-cover w-full h-full inset-0 opacity-1 md:opacity-0   group-hover:opacity-100 transition-opacity duration-200 ease-in-out cursor-pointer"
               src="https://ronasit.com/_next/image/?url=%2Fimg%2Fhome%2Fhybrid-light.webp&w=1920&q=75"
               alt="Decorative Image"
             />
@@ -70,9 +72,9 @@ const Developement = () => {
               both iOS and Android platforms without compromising quality.
             </p>
           </div>
-          <div className=" group flex flex-col  gap-6 pb-28  p-5 col-start-2 col-end-2 row-start-2 row-end-3 relative">
+           <div className=" group flex  flex-col  gap-6 pb-28  p-5  relative">
             <img
-              className="absolute left-0 bottom-0 object-center w-full h-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ease-in-out cursor-pointer"
+              className="absolute left-0 bottom-0 object-cover w-full h-full  opacity-1 md:opacity-0   group-hover:opacity-100 transition-opacity duration-200 ease-in-out cursor-pointer"
               src="https://ronasit.com/_next/image/?url=%2Fimg%2Fhome%2Fquality-light.webp&w=1920&q=75"
               alt="Decorative Image"
             />
@@ -83,7 +85,9 @@ const Developement = () => {
               We run manual and automated tests to ensure your product's quality
               on all stages of development.
             </p>
-          </div>
+          </div> 
+
+
         </div>
       </div>
     </div>

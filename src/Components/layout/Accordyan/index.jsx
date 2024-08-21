@@ -44,8 +44,8 @@ const Accordiyan = () => {
   ];
 
   return (
-    <div className="grid grid-cols-acc-cols gap-16 pr-11 mt-24 auto-rows">
-      <div className="col-span-1 row-span-3">
+    <div className="grid  gap-20 mt-10  pl-7   lg:grid-cols-acc-cols lg:gap-16  md:pr-11 lg:mt-24 auto-rows  md:px-28 lg:px-0">
+      <div className="col-span-1 lg:row-span-3">
         <div>
           <p className="text-client-size font-medium">FAQ</p>
         </div>
@@ -53,15 +53,19 @@ const Accordiyan = () => {
 
       {faqData.map((item, index) => (
         <div key={index} className="px-3 flex flex-col gap-5 relative">
-          <h2 className="text-acy-size font-medium leading-8">
-            {item.question}
-          </h2>
-          <i
-            className={`icon fa-2xl left-left top-0 ${
-              isOpen[index] ? "open" : ""
-            }`}
-            onClick={() => toggleAccordion(index)}
-          ></i>
+          
+            <i
+              className={`icon fa-2xl left-left top-0 ${
+                isOpen[index] ? "open" : ""
+              }`}
+              onClick={() => toggleAccordion(index)}
+            ></i>
+
+            <h2 className=" text-acy-sizeres  lg:text-acy-size font-medium leading-8">
+              {item.question}
+            </h2>
+        
+
           <div className={`accordion-content ${isOpen[index] ? "open" : ""}`}>
             <p>{item.answer}</p>
           </div>

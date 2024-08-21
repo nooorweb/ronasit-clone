@@ -2,33 +2,50 @@ import React from "react";
 import { Starsmall } from "../Svgs/index.jsx";
 import { Feather } from "../Svgs/index.jsx";
 import { Clutch } from "../Svgs/index.jsx";
+import Aos from "aos";
+
+
+const AsCompany = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  });}
 const Review = () => {
   return (
     <>
-      <div className="flex gap-12 font-medium mt-56 ">
-        <h2 className="text-2xl font-medium">Numbers</h2>
+       <div className="flex  mt-96 pt-80 md:pt-0    flex-col  items-center md:items-start  md:gap-4 md:flex-col lg:flex-row   lg:gap-28 font-medium  md:mt-40 " data-aos="fade-up">
+        <h2 className="text-2xl font-medium mb-10">Numbers</h2>
 
-        <div className="  max-w-60  text-left  ml-36">
-          <h2 className="text-counter-size  mb-2.5">1870</h2>
-          <p className="text-2xl ">
-            reviews<br></br> across 5 platforms
-          </p>
-        </div>
-        <div className="  max-w-60   text-left">
-          <h2 className="text-counter-size  mb-2.5">Top 50</h2>
-          <p className="text-2xl  ">app development companies on</p>
-        </div>
-        <div className="  max-w-80    text-left ">
-          <h2 className="text-counter-size  mb-2.5">
-            <span></span> 4.9/5
-          </h2>
+        <div className="flex gap-12 flex-col  md:flex-row ">
+          <div className="  max-w-60  text-center   md:text-left sm:pt-10 md:pt-0  ">
+            <h2 className="text-counter-size  mb-2.5">1870</h2>
+            <p className="text-2xl ">
+              reviews<br></br> across 5 platforms
+            </p>
+          </div>
 
-          <p className="text-2xl ">average rate</p>
-        </div>
-      </div>
+          <div className="  max-w-60 text-center   md:text-left">
+            <h2 className="text-counter-size  mb-2.5">Top 50</h2>
+            <p className="text-2xl  ">app development companies on</p>
+          </div>
 
-      <div className="   grid  grid-cols-cols-layout mt-20  ">
-        <div className="  col-start-3 col-end-5 grid grid-cols-2 grid-rows-rows-layout  font-medium gap-10 gap-x-24 cursor-pointer ">
+
+          <div className="  max-w-80  text-center   md:text-left ">
+            <h2 className="text-counter-size  mb-2.5">
+              <span></span> 4.9/5
+            </h2>
+
+            <p className="text-2xl ">average rate</p>
+          </div>
+
+
+
+        </div>
+      </div> 
+
+       <div className="   grid  md:grid-cols-cols-layout  mt-20  ">
+        <div className="  md:col-start-3 md:col-end-5 grid md:grid-cols-2 md:grid-rows-rows-layout  font-medium gap-10 gap-x-24 cursor-pointer ">
           <div className="flex gap-4 items-center justify-center  ">
             <div className="border border-solid border-gray-300 hover:border-black rounded-full p-5 transition ease-in-out duration-500 hover:scale-105  img">
               <img
@@ -128,9 +145,9 @@ const Review = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
 
-      <div className="flex   font-medium px-16  justify-end gap-12 mt-16 py-16   ">
+       <div className="flex  flex-col gap-32  md:flex-row  font-medium px-16  justify-center md:gap-2 lg:gap-12 mt-16 py-16    ">
         <div className="    px-16   relative cursor-pointer ">
           <Feather />
 
@@ -143,7 +160,7 @@ const Review = () => {
             </div>
           </div>
         </div>
-        <div className="    px-16     relative cursor-pointer">
+        <div className=" px-16 relative cursor-pointer">
           <Feather />
           <div className="  ">
             <div className="text-center">
@@ -156,14 +173,14 @@ const Review = () => {
         <div className="    px-12    relative  cursor-pointer">
           <Feather />
 
-          <div className="text-center">
-            <img src="./assets/images/award.png " width={120}></img>
+          <div className="text-center md:pl-5 lg:pl-0">
+            <img  src="./assets/images/award.png " width={120}></img>
 
             <p className="text-xs pt-2">HONORABLE MENTION</p>
             <p className="text-sm font-light">Winter 2024</p>
           </div>
         </div>
-      </div>
+      </div> 
     </>
   );
 };

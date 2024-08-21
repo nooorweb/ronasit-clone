@@ -8,12 +8,12 @@ import Footer from "../Footer/index.jsx";
 
 const Home2 = () => {
   return (
-    <div className="px-20 ">
-      <AsCompany />
-      <Protfolio />
-      <Client />
-      <Review />
-      <Accordiyan />
+    <div className="md:px-20 px-4">
+       <AsCompany />
+      <Protfolio /> 
+      <Client />  
+       <Review />
+      <Accordiyan />  
 
       <Footer />
     </div>

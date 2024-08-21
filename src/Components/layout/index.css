@@ -58,3 +58,12 @@ a:hover {
 .custom-transition {
   transition: transform 3s cubic-bezier(0.2, 0.8, 0.2, 1);
 } */
+
+
+.hover-trigger:hover + .hover-content {
+  display: block;
+}
+
+.hover-content {
+  display: none;
+}

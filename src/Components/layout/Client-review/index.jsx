@@ -7,81 +7,94 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Client = () => {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    const mediaQuery = window.matchMedia("(min-width: 640px)");
 
-    gsap.set(".left img", { opacity: 0.5 });
+    const setupAnimations = () => {
+      if (mediaQuery.matches) {
+        gsap.set(".left img", { opacity: 0.5 });
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".client",
-        start: "top top",
-        end: "bottom bottom",
-        pin: ".left",
-        scrub: true,
-      },
-    });
-
-    gsap.utils.toArray(".left img").forEach((img, i) => {
-      tl.to(
-        img,
-        {
-          opacity: 1,
-          duration: 1,
-          onStart: () => {
-            gsap.to(img, { opacity: 1, border: "3px solid #26A0F8" });
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".client",
+            start: "top top",
+            end: "bottom bottom",
+            pin: ".left",
+            scrub: true,
           },
-          onComplete: () => {
-            gsap.to(img, { opacity: 0.5, border: "none" });
-          },
-        },
-        i * 2
-      );
-    });
+        });
+
+        gsap.utils.toArray(".left img").forEach((img, i) => {
+          tl.to(
+            img,
+            {
+              opacity: 1,
+              duration: 1,
+              onStart: () => {
+                gsap.to(img, { opacity: 1, border: "3px solid #26A0F8" });
+              },
+              onComplete: () => {
+                gsap.to(img, { opacity: 0.5, border: "none" });
+              },
+            },
+            i * 2
+          );
+        });
+      } else {
+       
+        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      }
+    };
+
+    setupAnimations();
+
+   
+    mediaQuery.addEventListener("change", setupAnimations);
 
     return () => {
+      mediaQuery.removeEventListener("change", setupAnimations);
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
   return (
     <div>
-      <p className="text-4xl font-medium">
+      <p className="text-4xl font-medium py-10 md:py-0">
         What clients think about our software development company:
       </p>
 
-      <div className="flex  pr-8  gap-16 px-8 client">
-        <div className="relative pt-20">
-          <div className="flex flex-col gap-8   h-fit left">
-            <div className=" text-left w-44">
+      <div className="flex  flex-col  md:mt-40  md:flex-row  md:gap-6  md-0 lg:gap-8 lg:px-3 md:px-1 client">
+        <div className="relative   md:pt-40 lg:pt-10    ">
+          <div className="flex flex-row md:flex-col   gap-10   md:gap-20 lg:gap-12  h-fit left  overflow-scroll md:overflow-hidden">
+            <div className=" text-center   md:text-left w-60 md:w-44">
               <img
-                className="rounded-full w-12 h-12 "
+                className="rounded-full w-12 h-12 mx-4 "
                 src="./assets/images/avt.webp"
                 alt="Bob Glazebrook"
               />
               <p className="font-bold text-sm mt-4">Bob Glazebrook</p>
               <p className="text-xs">Principal, Visual Engineering inc.</p>
             </div>
-            <div className=" text-left w-44">
+            <div className=" text-center  md:text-left min-w-28 md:w-44">
               <img
-                className="rounded-full w-12 h-12"
+                className="rounded-full w-12 h-12 mx-4"
                 src="./assets/images/pic1.jpg"
                 alt="Craig Barber"
               />
               <p className="font-bold text-sm mt-4">Craig Barber</p>
               <p className="text-xs">Founder, Logobly</p>
             </div>
-            <div className=" text-left w-44">
+            <div className=" text-center   md:text-left min-w-28 md:w-44">
               <img
-                className="rounded-full w-12 h-12"
+                className="rounded-full w-12 h-12 mx-4"
                 src="./assets/images/pic2.jpg"
                 alt="Rivget Raut"
               />
               <p className="font-bold text-sm mt-4">Rivget Raut</p>
               <p className="text-xs">Founder, Machine E-Commerce Platform</p>
             </div>
-            <div className=" text-left w-44">
+            <div className="text-center   md:text-left min-w-28 md:w-44">
               <img
-                className="rounded-full w-12 h-12"
+                className="rounded-full w-12 h-12 mx-4"
                 src="./assets/images/pic4.jpg"
                 alt="Adrian Lunga"
               />
@@ -90,16 +103,16 @@ const Client = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex flex-col gap-40 mt-24 ml-20">
-          <div>
+        <div></div>
+        <div className="flex h-0 md:h-full -m-30   md:flex-col  lg:gap-40 md:gap-16 md:mt-10 lg:mt-24 md:mr-5 lg:ml-20  ">
+          <div className="pt-10 md:pt-0">
             <p className="flex items-center pb-8">
               <span className="flex gap-5">
                 <BigStar />
                 <p className="border-l-2 text-2xl pl-5">5.0</p>
               </span>
             </p>
-            <p className="text-4xl font-medium leading-tight">
+            <p className=" text-3xl md:text-4xl font-medium leading-tight">
               Ronas IT demonstrates an excellent understanding of user needs and
               all of their designs are creative and elegant in their simplicity.
               They’re very well thought out and have an excellent response to
@@ -107,14 +120,14 @@ const Client = () => {
               experience experts.
             </p>
           </div>
-          <div>
+          <div className="hidden md:block">
             <p className="flex items-center pb-8">
               <span className="flex gap-5">
                 <BigStar />
                 <p className="border-l-2 text-2xl pl-5">5.0</p>
               </span>
             </p>
-            <p className="text-4xl font-medium leading-tight">
+            <p className="text-3xl md:text-4xl  font-medium leading-tight">
               Fantastic service. The guys went above and beyond. They also
               suggested improvements to my app which I really appreciated - as
               apposed to doing exactly what I asked, it resulted in a better
@@ -122,28 +135,28 @@ const Client = () => {
               were done and getting done. Very effective.
             </p>
           </div>
-          <div>
+          <div className="hidden md:block">
             <p className="flex items-center pb-8">
               <span className="flex gap-5">
                 <BigStar />
                 <p className="border-l-2 text-2xl pl-5">5.0</p>
               </span>
             </p>
-            <p className="text-4xl font-medium leading-tight">
+            <p className="text-3xl md:text-4xl  font-medium leading-tight">
               A technically skilled team, Ronas IT goes the extra mile to
               deliver high-quality solutions. With a broad understanding of both
               the product and current technologies, they provide impactful,
               timely, and flexible support.
             </p>
           </div>
-          <div>
+          <div className="hidden md:block">
             <p className="flex items-center pb-8">
               <span className="flex gap-5">
                 <BigStar />
                 <p className="border-l-2 text-2xl pl-5">5.0</p>
               </span>
             </p>
-            <p className="text-4xl font-medium leading-tight">
+            <p className="text-3xl md:text-4xl font-medium leading-tight">
               The quality of their work stands out the most. They’re
               knowledgeable and provide useful feedback.
             </p>

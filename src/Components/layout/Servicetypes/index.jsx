@@ -12,37 +12,34 @@ const Service = () => {
 
   return (
     <>
-      <div className="flex   justify-between pt-20 pb-20  px-7">
-        <p className="pr-36 text-2xl " data-aos="fade-up">
+      <div className="flex  flex-col lg:flex-row  justify-between pt-20 pb-20  lg:px-7">
+        <p className="lg:pr-36 text-service-size" data-aos="fade-up">
           You may need our services if you want to:
         </p>
 
-        <div className="flex    flex-col gap-8 justify-between  w-9/12 ">
-          <div
-            className="flex gap-12     justify-between items-start "
-            data-aos="fade-up"
-          >
-            <i class="fa-solid fa-lightbulb text-6xl text-blue-500"></i>
-            <p className="text-3xl font-semibold  py-5 pl-4">
+        <div className="flex max-w-full   flex-col gap-12 lg:gap-5  justify-between pt-10  lg:w-9/12 ">
+          <div className="flex  gap-4 lg:gap-12      items-center " data-aos="fade-up">
+            <i class="fa-solid fa-lightbulb text-6xl text-blue-500 pb-10"></i>
+            <p className="text-3xl font-medium lg:font-semibold py-5 pl-4">
               Create an MVP to attract investors and test your business idea
             </p>
           </div>
           <div
-            className="flex gap-16  text-left   justify-between items-start"
+            className="flex gap-7 lg:gap-12   text-left    items-center"
             data-aos="fade-up"
           >
-            <i class="fa-regular fa-building text-6xl text-blue-500"></i>
-            <p className="text-3xl font-semibold text-left justify-between  py-6  pl-0 ">
+            <i class="fa-regular fa-building text-6xl text-blue-500 pb-1"></i>
+            <p className="text-3xl font-medium lg:font-semibold text-left   py-6  pl-0 ">
               Automate the internal processes of your business
             </p>
           </div>
 
           <div
-            className="flex    gap-12   text-left   justify-between items-start pt-4"
+            className="flex  gap-4 lg:gap-12    text-left   justify-between items-center pb-4"
             data-aos="fade-up"
           >
-            <i className="fa-solid fa-mobile  text-6xl text-blue-500"></i>
-            <p className="text-3xl font-semibold   py-5 text-left pl-4">
+            <i className="fa-solid fa-mobile  text-6xl text-blue-500 pb-16"></i>
+            <p className="text-3xl font-medium lg:font-semibold  py-5 text-left pl-4">
               Create a web or mobile app to attract new customers and make your
               service more convenient for them
             </p>
