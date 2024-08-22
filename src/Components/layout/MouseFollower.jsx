@@ -16,23 +16,26 @@ const MouseFollower = () => {
 
     window.addEventListener("mousemove", handleMouseMove);
 
-    gsap.to({}, {
-      duration: 0.016, // 60fps
-      repeat: -1,
-      onUpdate: () => {
-        posX.current += (mouseX.current - posX.current) * 0.15;
-        posY.current += (mouseY.current - posY.current) * 0.15;
+    gsap.to(
+      {},
+      {
+        duration: 0.016, // 60fps
+        repeat: -1,
+        onUpdate: () => {
+          posX.current += (mouseX.current - posX.current) * 0.15;
+          posY.current += (mouseY.current - posY.current) * 0.15;
 
-        if (cursorRef.current) {
-          gsap.set(cursorRef.current, {
-            css: {
-              left: posX.current - 13, 
-              top: posY.current - 13,  
-            },
-          });
-        }
+          if (cursorRef.current) {
+            gsap.set(cursorRef.current, {
+              css: {
+                left: posX.current - 13,
+                top: posY.current - 13,
+              },
+            });
+          }
+        },
       }
-    });
+    );
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);

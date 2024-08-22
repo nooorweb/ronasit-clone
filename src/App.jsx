@@ -2,15 +2,10 @@ import React from "react";
 import "./App.css";
 import Home from "./Components/layout/Home/Home";
 
-
 function App() {
   return (
     <div>
-   
-    
       <Home />
-      
-     
     </div>
   );
 }
