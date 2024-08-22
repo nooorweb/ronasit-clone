@@ -77,56 +77,53 @@ const Hero = () => {
             </svg>
           </span>
 
-
           <span className=" flex flex-col items-center justify-center  border-b-2 border-gray-600 border-dashed dashed   pb-3">
             Development.
           </span>
           <span className="flex flex-col items-center justify-center ">
             Maintenance.
             <div className="flex justify-center w-48 align-center ">
-            <svg
-              className=""
-              xmlns="http://www.w3.org/2000/svg"
-              width="228"
-              height="11"
-              fill="none"
-            >
-              <g clip-path="url(#a)">
-                <path
-                  stroke="gray"
-                  stroke-width="2"
-                  d="M133 5.5q-9.5 7-19 0t-19 0-19 0-19 0-19 0-19 0-19 0-19 0-19 0 M246 5.5q-9.5 7-19 0t-19 0-19 0-19 0-19 0-19 0-19 0-19 0-19 0"
-                />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 0h228v11H0z" />
-                </clipPath>
-              </defs>
-            </svg>
-            <svg
-              className=""
-              xmlns="http://www.w3.org/2000/svg"
-              width="228"
-              height="11"
-              fill="none"
-            >
-              <g clip-path="url(#a)">
-                <path
-                  stroke="gray"
-                  stroke-width="2"
-                  d="M133 5.5q-9.5 7-19 0t-19 0-19 0-19 0-19 0-19 0-19 0-19 0-19 0 M246 5.5q-9.5 7-19 0t-19 0-19 0-19 0-19 0-19 0-19 0-19 0-19 0"
-                />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 0h228v11H0z" />
-                </clipPath>
-              </defs>
-            </svg>
+              <svg
+                className=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="228"
+                height="11"
+                fill="none"
+              >
+                <g clip-path="url(#a)">
+                  <path
+                    stroke="gray"
+                    stroke-width="2"
+                    d="M133 5.5q-9.5 7-19 0t-19 0-19 0-19 0-19 0-19 0-19 0-19 0-19 0 M246 5.5q-9.5 7-19 0t-19 0-19 0-19 0-19 0-19 0-19 0-19 0-19 0"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h228v11H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg
+                className=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="228"
+                height="11"
+                fill="none"
+              >
+                <g clip-path="url(#a)">
+                  <path
+                    stroke="gray"
+                    stroke-width="2"
+                    d="M133 5.5q-9.5 7-19 0t-19 0-19 0-19 0-19 0-19 0-19 0-19 0-19 0 M246 5.5q-9.5 7-19 0t-19 0-19 0-19 0-19 0-19 0-19 0-19 0-19 0"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h228v11H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
-       
-
           </span>
         </h1>
       </div>
@@ -154,7 +151,7 @@ const Hero = () => {
               href="#text-path"
               startOffset="50%"
               textAnchor="middle"
-              className="tracking-widest font-normal text-circle-size " 
+              className="tracking-widest font-normal text-circle-size "
             >
               Watch our showreel • Watch our showreel •
             </textPath>

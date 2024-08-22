@@ -23,7 +23,7 @@ module.exports = {
         'rh-size': '3.25em',    
         'client-size': '2.75em',
         'counter-size': '3.25em',
-        'acy-size': '1.875em',
+        'acy-size': '1.575em',
         'acy-sizeres': '1.7em',
         'circle-size': '11px',
         'service-size': '1.7rem',
@@ -38,7 +38,10 @@ module.exports = {
         'left': '-40px',
          'leftplay':"56px",
          'darkheight':"15px",
-         'border':'1px'
+         'size':"40px",
+         'border':'1px',
+         'ph':'5px',
+         'pw':'20px'
 
 
       },

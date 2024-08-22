@@ -4,19 +4,18 @@ import { Feather } from "../Svgs/index.jsx";
 import { Clutch } from "../Svgs/index.jsx";
 import Aos from "aos";
 
-
 const AsCompany = () => {
   useEffect(() => {
     Aos.init({
       duration: 1000,
     });
-  });}
+  });
+};
 const Review = () => {
   return (
-    <>
-       <div className="flex  mt-96 pt-80 md:pt-0    flex-col  items-center md:items-start  md:gap-4 md:flex-col lg:flex-row   lg:gap-28 font-medium  md:mt-40 " data-aos="fade-up">
+    <div className="md:px-20 px-4">
+      <div className="flex  mt-96 pt-80 md:pt-0    flex-col  items-center md:items-start  md:gap-4 md:flex-col lg:flex-row   lg:gap-28 font-medium  md:mt-40 ">
         <h2 className="text-2xl font-medium mb-10">Numbers</h2>
-
         <div className="flex gap-12 flex-col  md:flex-row ">
           <div className="  max-w-60  text-center   md:text-left sm:pt-10 md:pt-0  ">
             <h2 className="text-counter-size  mb-2.5">1870</h2>
@@ -30,7 +29,6 @@ const Review = () => {
             <p className="text-2xl  ">app development companies on</p>
           </div>
 
-
           <div className="  max-w-80  text-center   md:text-left ">
             <h2 className="text-counter-size  mb-2.5">
               <span></span> 4.9/5
@@ -38,13 +36,10 @@ const Review = () => {
 
             <p className="text-2xl ">average rate</p>
           </div>
-
-
-
         </div>
-      </div> 
+      </div>
 
-       <div className="   grid  md:grid-cols-cols-layout  mt-20  ">
+      <div className="   grid  md:grid-cols-cols-layout  mt-20  ">
         <div className="  md:col-start-3 md:col-end-5 grid md:grid-cols-2 md:grid-rows-rows-layout  font-medium gap-10 gap-x-24 cursor-pointer ">
           <div className="flex gap-4 items-center justify-center  ">
             <div className="border border-solid border-gray-300 hover:border-black rounded-full p-5 transition ease-in-out duration-500 hover:scale-105  img">
@@ -145,9 +140,9 @@ const Review = () => {
             </div>
           </div>
         </div>
-      </div> 
+      </div>
 
-       <div className="flex  flex-col gap-32  md:flex-row  font-medium px-16  justify-center md:gap-2 lg:gap-12 mt-16 py-16    ">
+      <div className="flex  flex-col gap-32  md:flex-row  font-medium px-16  items-center justify-center md:gap-2 lg:gap-12 mt-16 py-16    ">
         <div className="    px-16   relative cursor-pointer ">
           <Feather />
 
@@ -174,14 +169,14 @@ const Review = () => {
           <Feather />
 
           <div className="text-center md:pl-5 lg:pl-0">
-            <img  src="./assets/images/award.png " width={120}></img>
+            <img src="./assets/images/award.png " width={120}></img>
 
             <p className="text-xs pt-2">HONORABLE MENTION</p>
             <p className="text-sm font-light">Winter 2024</p>
           </div>
         </div>
-      </div> 
-    </>
+      </div>
+    </div>
   );
 };
 

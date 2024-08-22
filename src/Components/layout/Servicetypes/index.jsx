@@ -11,14 +11,17 @@ const Service = () => {
   }, []);
 
   return (
-    <>
+    <div className="md:px-20 px-4">
       <div className="flex  flex-col lg:flex-row  justify-between pt-20 pb-20  lg:px-7">
         <p className="lg:pr-36 text-service-size" data-aos="fade-up">
           You may need our services if you want to:
         </p>
 
         <div className="flex max-w-full   flex-col gap-12 lg:gap-5  justify-between pt-10  lg:w-9/12 ">
-          <div className="flex  gap-4 lg:gap-12      items-center " data-aos="fade-up">
+          <div
+            className="flex  gap-4 lg:gap-12      items-center "
+            data-aos="fade-up"
+          >
             <i class="fa-solid fa-lightbulb text-6xl text-blue-500 pb-10"></i>
             <p className="text-3xl font-medium lg:font-semibold py-5 pl-4">
               Create an MVP to attract investors and test your business idea
@@ -48,7 +51,7 @@ const Service = () => {
 
         <div></div>
       </div>
-    </>
+    </div>
   );
 };
 

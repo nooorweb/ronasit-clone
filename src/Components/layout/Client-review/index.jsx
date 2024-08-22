@@ -40,14 +40,12 @@ const Client = () => {
           );
         });
       } else {
-       
         ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       }
     };
 
     setupAnimations();
 
-   
     mediaQuery.addEventListener("change", setupAnimations);
 
     return () => {
@@ -57,7 +55,7 @@ const Client = () => {
   }, []);
 
   return (
-    <div>
+    <div className="md:px-20 px-4">
       <p className="text-4xl font-medium py-10 md:py-0">
         What clients think about our software development company:
       </p>
