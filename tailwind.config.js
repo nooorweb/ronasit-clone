@@ -41,7 +41,8 @@ module.exports = {
          'size':"40px",
          'border':'1px',
          'ph':'5px',
-         'pw':'20px'
+         'pw':'20px',
+         'top':'1.5px'
 
 
       },

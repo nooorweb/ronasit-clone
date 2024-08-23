@@ -162,7 +162,7 @@ const Header = () => {
               onClick={handleToggle}
             >
               <div
-                className={`absolute top-0.5 left-3 w-3 h-3 bg-primary rounded-full shadow-md transform transition-transform ${
+                className={`absolute top-top left-3 w-3 h-3 bg-primary rounded-full shadow-md transform transition-transform ${
                   darkMode ? "-translate-x-3" : "translate-x-0"
                 }`}
               ></div>

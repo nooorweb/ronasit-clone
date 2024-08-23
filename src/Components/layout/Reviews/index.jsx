@@ -13,7 +13,7 @@ const AsCompany = () => {
 };
 const Review = () => {
   return (
-    <div className="md:px-20 px-4">
+    <div className="md:px-20 px-4 pt-32 md:pt-0">
       <div className="flex  mt-96 pt-80 md:pt-0    flex-col  items-center md:items-start  md:gap-4 md:flex-col lg:flex-row   lg:gap-28 font-medium  md:mt-40 ">
         <h2 className="text-2xl font-medium mb-10">Numbers</h2>
         <div className="flex gap-12 flex-col  md:flex-row ">
@@ -39,7 +39,7 @@ const Review = () => {
         </div>
       </div>
 
-      <div className="   grid  md:grid-cols-cols-layout  mt-20  ">
+      <div className="   grid  md:grid-cols-cols-layout  md:mt-20  ">
         <div className="  md:col-start-3 md:col-end-5 grid md:grid-cols-2 md:grid-rows-rows-layout  font-medium gap-10 gap-x-24 cursor-pointer ">
           <div className="flex gap-4 items-center justify-center  ">
             <div className="border border-solid border-gray-300 hover:border-black rounded-full p-5 transition ease-in-out duration-500 hover:scale-105  img">
