@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Sidebar from "../Sidebar";
 import { arr1, arr2, arr3, data } from "../Constants/const";
+import { AuthContext } from "../Context";
+import { counter } from "@fortawesome/fontawesome-svg-core";
 
 const Footer = () => {
-  const [activei, setActiveIndex] = useState(null);
+  const [activei, setactivei] = useState(null);
 
   const toggleAccordion = (index) => {
-    setActiveIndex(activei === index ? null : index);
-  };
-
-  let setacc = () => {
-    SetHide(!hide);
+    setactivei(activei === index ? null : index);
   };
 
   return (

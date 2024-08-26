@@ -168,7 +168,7 @@ const Review = () => {
         <div className="    px-12    relative  cursor-pointer">
           <Feather />
 
-          <div className="text-center md:pl-5 lg:pl-0">
+          <div className="text-center pl-5  md:pl-5 lg:pl-0 ">
             <img src="./assets/images/award.png " width={120}></img>
 
             <p className="text-xs pt-2">HONORABLE MENTION</p>

@@ -5,6 +5,7 @@ const Accordiyan = () => {
   const [isOpen, setOpen] = useState(Array(6).fill(false));
 
   const toggleAccordion = (index) => {
+    console.log('here is index',index)
     const newIsOpen = isOpen.map((item, idx) => (idx === index ? !item : item));
     setOpen(newIsOpen);
   };

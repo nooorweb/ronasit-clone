@@ -10,17 +10,17 @@ const Maintain = () => {
   return (
     <div className="md:px-20 px-4">
       <div
-        className="flex flex-col mt-20  lg:gap-32 justify-between py-15 lg:flex-row"
+        className="flex flex-col mt-20  lg:gap-32 justify-between py-15 md:flex-row"
         data-aos="fade-up"
       >
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col  gap-10">
           <p>03</p>
           <h2 className="text-services-size md:text-5xl font-medium">
             Maintainence
           </h2>
         </div>
 
-        <div className="mt-10 md:mt-32 max-w-2xl  flex flex-col gap-20 ">
+        <div className="mt-10 md:mt-32 max-w-2xl  flex flex-col  gap-20 ">
           <div className=" flex flex-col gap-10 lg:px-8 md:w-fit  ">
             <p className="text-xl md:text-2xl">
               Constant updating, modifying, and re-assessing of software is one
@@ -34,10 +34,10 @@ const Maintain = () => {
           </div>
 
           <div
-            className=" flex md:mb-28  gap-12 lg:gap-0 flex-col lg:flex-row"
+            className=" flex md:mb-28  gap-5 md:gap-0 flex-col lg:flex-row"
             data-aos="fade-up"
           >
-            <div className=" group flex flex-col gap-12  md:pb-40     p-5 lg:max-w-80 relative ">
+            <div className=" group flex flex-col gap-12  md:pb-40     p-5 md:max-w-80 relative ">
               <img
                 className="absolute inset-0 object-center w-full h-full opcaity-1 md:opacity-0   group-hover:opacity-100 transition-opacity duration-200 ease-in-out cursor-pointer"
                 src="https://ronasit.com/_next/image/?url=%2Fimg%2Fhome%2Fpostrelease.webp&w=1920&q=75"
@@ -50,7 +50,7 @@ const Maintain = () => {
                 implementation.
               </p>
             </div>
-            <div className=" group flex flex-col gap-6  md:pb-40    p-5 lg:max-w-80  relative">
+            <div className=" group flex flex-col gap-6  md:pb-40    p-5 md:max-w-80  relative">
               <img
                 className="absolute left-0 bottom-0 object-center w-full h-full md:opacity-0   group-hover:opacity-100 transition-opacity duration-200 ease-in-out cursor-pointer"
                 src="https://ronasit.com/_next/image/?url=%2Fimg%2Fhome%2Fadministration.webp&w=1920&q=75"

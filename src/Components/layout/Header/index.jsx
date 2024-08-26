@@ -220,6 +220,11 @@ const Header = () => {
             <p className="text-gray-500">UI Theme</p>
 
             <div>Dark</div>
+
+            <div className="flex gap-16 text-xs w-fit p-4 rounded-full bg-gray-400">
+              <p> Dark </p>
+              <p> Light </p>
+            </div>
           </div>
         </div>
       </div>
