@@ -179,5 +179,30 @@ const faqData = [
 ];
 
 
+const Featurepostlg =[
 
-export { arr1, arr2, arr3, data, faqData }
+  {
+    title: "Featured posts",
+    content: [
+      "Cost of website redesign",
+      "How to build a social  media website",
+      "Building a chat app with React Native ",
+      "Outsourcing software development for startups",
+      "Music app development",
+    ],
+    content2: [
+      "How to create a mobile banking app ",
+      "How long does app develoment take",
+      "Building  a chat app with React Native ",
+      "Job search app development",
+      "How to speed up the mobile app development",
+    ],
+  }
+ 
+
+]
+
+
+
+
+export { arr1, arr2, arr3, data, faqData,Featurepostlg }

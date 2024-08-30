@@ -1,13 +1,19 @@
 import { useState, useEffect, useRef } from "react";
-import { Logo } from "../Svgs/index.jsx";
+import { Logo, Moon } from "../Svgs/index.jsx";
 import "../Constants/const.js";
 import { arr1, arr2, arr3 } from "../Constants/const.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useGSAP } from "@gsap/react";
+import useButtonEffect from "../Constants/BtnEffect.jsx";
 
 const Header = () => {
+  const buttonRef = useRef(null);
+  useButtonEffect(buttonRef)
+
+  const [isScrolled, setIsScrolled] = useState(false);
   const [visible, setVisible] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
   const menu = useRef(null);
   const showMenu = () => {
     setVisible(!visible);
@@ -20,7 +26,6 @@ const Header = () => {
     }
   }, [visible]); // Update the dependency array to listen for `visible`
 
-  const [darkMode, setDarkMode] = useState(false);
   const handleToggle = () => {
     setDarkMode(!darkMode);
   };
@@ -33,18 +38,43 @@ const Header = () => {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="sticky top-0 z-10  backdrop-blur-md ">
-      <div className="flex items-center p-3 justify-between md:px-8">
+    <div
+      className={`sticky top-0 z-10 backdrop-blur-md transition-all duration-200 ease-in-out delay-200 ${isScrolled ? 'border-b-b border-secondary' : ''
+        }`}
+    >
+
+      <div className="flex items-center p-3 justify-between md:px-7  py-6  ">
         <div className="logo" data-cursor-stick>
           <div className="w-10 lg:block">
-            <Logo />
+            <div className={isScrolled ? 'hidden delay-500 transition-all duration-900' : 'block '}>
+              <Logo />
+
+            </div>
+            <p className={isScrolled ? 'block text-2xl font-semibold transition-all duration-500 ease-in-out delay-500' : 'hidden'}>Ronas.</p>
           </div>
-          {/* <p className="font-medium text-xl  lg:hidden">Ronas.</p> */}
+
         </div>
 
+
         <div className="flex abovediv">
-          <ul className=" hidden lg:flex gap-8 font-medium cursor-pointer items-center text-sm ">
+          <ul className=" hidden lg:flex gap-6 font-medium cursor-pointer items-center text-sm ">
             <li className=" group py-5">
               <a href="#" className="block">
                 Services
@@ -52,7 +82,7 @@ const Header = () => {
 
               <div className="absolute font-normal  h-screen overflow-y-scroll  left-0 top-full -z-20 transform translate-y-[-3rem] transition-all duration-700 ease-in-out w-fit opacity-0 pointer-events-none group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto bg-primary  px-20">
                 <div className="flex gap-8 flex-col p-4 w-full pl-20">
-                  <button className="bg-primary w-fit text-secondary border-2 p-4 rounded-full text-sm px-11">
+                  <button className="bg-primary w-fit text-secondary border-b p-4 rounded-full text-sm px-11">
                     All Services
                   </button>
 
@@ -156,18 +186,28 @@ const Header = () => {
             </li>
           </ul>
 
-          <div className="flex gap-4 lg:gap-10 pl-4 items-center">
+          <div className="flex gap-4 lg:gap-4 pl-8 items-center">
             <div
-              className="relative w-6 h-darkheight bg-secondary  rounded-full cursor-pointer hidden lg:block"
+              className="relative w-6 h-darkheight bg-secondary rounded-full cursor-pointer hidden lg:block"
               onClick={handleToggle}
             >
               <div
-                className={`absolute top-top left-3 w-3 h-3 bg-primary rounded-full shadow-md transform transition-transform ${
-                  darkMode ? "-translate-x-3" : "translate-x-0"
-                }`}
-              ></div>
+                className={`absolute top-top left-3 w-3 h-3 bg-white z-50 rounded-full shadow-md transform transition-transform ${darkMode ? "-translate-x-3" : "translate-x-0"
+                  }`}
+              >
+
+                <div
+                  className={`absolute -top-8 w-4 h-4 z-100 rounded-full shadow-md transform transition-transform ${darkMode ? "opacity1000" : "opacity-0"
+                    }`} // Conditional class to hide or show SVG
+                >
+
+
+                  <Moon />
+                </div>
+              </div>
             </div>
-            <button
+
+            <button ref={buttonRef}
               className={`px-5 py-3   lg:py-5 lg:px-6 bg-secondary text-primary rounded-full text-xs md:text-sm font-medium hover:bg-customBlue hover:text-white transition-all duration-700 ease-in-out cursor-pointer`}
             >
               Estimate Project
@@ -184,7 +224,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* ====HUMBERGAR Menu Section-===== */}
+      {/* ====HUMBERGAR Menu Section-=====   Mobile Responsiveness */}
       <div
         className=" lg:hidden fixed  inset-0 -z-10  h-screen overflow-y-scroll bg-primary "
         ref={menu}

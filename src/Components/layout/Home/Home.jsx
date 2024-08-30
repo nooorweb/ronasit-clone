@@ -16,15 +16,19 @@ import Header from "../Header/index.jsx";
 import Calculater from "../CalculaterSec/index.jsx";
 import MouseFollower from "../MouseFollower.jsx";
 
+
 const Home = () => {
   return (
     <div className="">
+
       <div className="hidden md:block">
         <Sidebar />
       </div>
       <MouseFollower />
+
       <Header />
       <Hero />
+
       <Intro />
       <Service />
       <Design />

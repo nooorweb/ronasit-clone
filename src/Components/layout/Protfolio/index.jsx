@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Button from "../Button/Button";
+
 gsap.registerPlugin(ScrollTrigger);
 const Protfolio = () => {
   useEffect(() => {
@@ -48,9 +50,7 @@ const Protfolio = () => {
               A redesign concept of the Bank of America's mobile app
             </h3>
             <p className="opacity-40">mobile design</p>
-            <button className="py-5 px-10 text-secondary rounded-full border-2 border-slate-400 w-fit hover:bg-customBlue hover:text-white transition-all duration-700 ease-in-out cursor-pointer">
-              View More
-            </button>
+            <Button />
           </div>
 
           <div className="section flex flex-col  gap-6 md:gap-7 max-w-2xl ">
@@ -66,9 +66,7 @@ const Protfolio = () => {
               An employee engagement and training web app
             </h3>
             <p className="opacity-40">web design development</p>
-            <button className="py-5 px-10 text-secondary rounded-full border-2 border-slate-400 w-fit hover:bg-customBlue hover:text-white transition-all duration-700 ease-in-out cursor-pointer">
-              View More
-            </button>
+            <Button />
           </div>
 
           <div className="section flex flex-col gap-6 md:gap-7 max-w-2xl ">
@@ -85,9 +83,7 @@ const Protfolio = () => {
               mentors
             </h3>
             <p className="opacity-40">mobile design</p>
-            <button className="py-5 px-10 text-secondary rounded-full border-2 border-slate-400 w-fit hover:bg-customBlue hover:text-white transition-all duration-700 ease-in-out cursor-pointer">
-              View More
-            </button>
+            <Button />
           </div>
 
           <div className="section flex flex-col gap-6 md:gap-7 max-w-2xl ">
@@ -103,9 +99,7 @@ const Protfolio = () => {
               An on-demand food delivery App
             </h3>
             <p className="opacity-40">mobile design</p>
-            <button className="py-5 px-10 text-secondary rounded-full border-2 border-slate-400 w-fit hover:bg-customBlue hover:text-white transition-all duration-700 ease-in-out cursor-pointer">
-              View More
-            </button>
+            <Button />
           </div>
         </div>
 

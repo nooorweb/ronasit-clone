@@ -1,0 +1,68 @@
+/* MagneticButton.css */
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-blue-500 {
+  border-color: #3b82f6; /* Tailwind blue-500 */
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+}
+
+.transform {
+  transform: scale(4);
+}
+
+.-scale-x-100 {
+  transform: scaleX(0);
+}
+
+.-scale-y-100 {
+  transform: scaleY(0);
+}
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}

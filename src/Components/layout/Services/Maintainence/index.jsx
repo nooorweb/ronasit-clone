@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
+import Button from "../../Button/Button";
 
 const Maintain = () => {
   useEffect(() => {
@@ -20,7 +21,7 @@ const Maintain = () => {
           </h2>
         </div>
 
-        <div className="mt-10 md:mt-32 max-w-2xl  flex flex-col  gap-20 ">
+        <div className="mt-10 md:mt-16 max-w-2xl  flex flex-col  gap-20 ">
           <div className=" flex flex-col gap-10 lg:px-8 md:w-fit  ">
             <p className="text-xl md:text-2xl">
               Constant updating, modifying, and re-assessing of software is one
@@ -28,9 +29,7 @@ const Maintain = () => {
               service, we give businesses the technological support they need.
             </p>
 
-            <button className="py-5 px-10    text-secondary rounded-full border-2 border-slate-400 w-fit hover:bg-customBlue hover:text-white transition-all duration-700 ease-in-out cursor-pointer">
-              View More
-            </button>
+            <Button />
           </div>
 
           <div

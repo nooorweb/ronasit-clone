@@ -5,7 +5,7 @@ const Accordiyan = () => {
   const [isOpen, setOpen] = useState(Array(6).fill(false));
 
   const toggleAccordion = (index) => {
-    console.log('here is index',index)
+    console.log('here is index', index)
     const newIsOpen = isOpen.map((item, idx) => (idx === index ? !item : item));
     setOpen(newIsOpen);
   };
@@ -43,14 +43,12 @@ const Accordiyan = () => {
             </div>
 
             <div
-              className={`overflow-hidden transition-all duration-700 ease-in-out ${
-                isOpen[index] ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-              }`}
+              className={`overflow-hidden transition-all duration-700 ease-in-out ${isOpen[index] ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+                }`}
             >
               <p
-                className={`mt-2 md:pl-12  transition-opacity duration-700 ease-in-out ${
-                  isOpen[index] ? "opacity-100" : "opacity-0"
-                }`}
+                className={`mt-2 md:pl-12  transition-opacity duration-700 ease-in-out ${isOpen[index] ? "opacity-100" : "opacity-0"
+                  }`}
               >
                 {item.answer}
               </p>

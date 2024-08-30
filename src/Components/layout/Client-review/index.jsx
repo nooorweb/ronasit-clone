@@ -36,7 +36,7 @@ const Client = () => {
                 gsap.to(img, { opacity: 0.5, border: "none" });
               },
             },
-            i * 2
+
           );
         });
       } else {
@@ -60,12 +60,13 @@ const Client = () => {
         What clients think about our software development company:
       </p>
 
-      <div className="flex  flex-col  md:mt-40  md:flex-row  md:gap-6  md-0 lg:gap-8 lg:px-3 md:px-1 client">
-        <div className="relative   md:pt-40 lg:pt-10    ">
-          <div className="flex flex-row md:flex-col   gap-10   md:gap-20 lg:gap-12  h-fit left  overflow-scroll md:overflow-hidden">
+      <div className="flex  flex-col  md:mt-24  md:flex-row  md:gap-6  md-0 lg:gap-8 lg:px-3 md:px-1 client">
+        <div className="relative   md:pt-32 lg:pt-10    ">
+
+          <div className="flex  flex-row md:flex-col   gap-10   md:gap-20 lg:gap-12  h-fit left  overflow-scroll md:mt-24 md:overflow-hidden">
             <div className=" text-center   md:text-left w-60 md:w-44">
               <img
-                className="rounded-full w-12 h-12 mx-4 "
+                className="rounded-full w-12 h-12 mx-4 lg:mx-0 "
                 src="./assets/images/avt.webp"
                 alt="Bob Glazebrook"
               />
@@ -74,7 +75,7 @@ const Client = () => {
             </div>
             <div className=" text-center  md:text-left min-w-28 md:w-44">
               <img
-                className="rounded-full w-12 h-12 mx-4"
+                className="rounded-full w-12 h-12 mx-4 md:mx-0"
                 src="./assets/images/pic1.jpg"
                 alt="Craig Barber"
               />
@@ -83,7 +84,7 @@ const Client = () => {
             </div>
             <div className=" text-center   md:text-left min-w-28 md:w-44">
               <img
-                className="rounded-full w-12 h-12 mx-4"
+                className="rounded-full w-12 h-12 mx-4 md:mx-0"
                 src="./assets/images/pic2.jpg"
                 alt="Rivget Raut"
               />
@@ -92,7 +93,7 @@ const Client = () => {
             </div>
             <div className="text-center   md:text-left min-w-28 md:w-44">
               <img
-                className="rounded-full w-12 h-12 mx-4"
+                className="rounded-full w-12 h-12 mx-4 md:mx-0"
                 src="./assets/images/pic4.jpg"
                 alt="Adrian Lunga"
               />
@@ -102,7 +103,8 @@ const Client = () => {
           </div>
         </div>
         <div></div>
-        <div className="flex h-0 md:h-full -m-30   md:flex-col  lg:gap-40 md:gap-16 md:mt-10 lg:mt-24 md:mr-5 lg:ml-20  ">
+
+        <div className="flex h-0 md:h-full -m-30 pt-32  md:flex-col  lg:gap-40 md:gap-16 md:mt-10 lg:mt-24 md:mr-5 lg:ml-20   ">
           <div className="pt-10 md:pt-0">
             <p className="flex items-center pb-8">
               <span className="flex gap-5">
@@ -147,7 +149,7 @@ const Client = () => {
               timely, and flexible support.
             </p>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:block  ">
             <p className="flex items-center pb-8">
               <span className="flex gap-5">
                 <BigStar />

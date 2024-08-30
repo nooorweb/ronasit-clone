@@ -5,22 +5,31 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'bounce-up-down': 'bounceUpDown 2s ease-in-out infinite',
+      },
+      keyframes: {
+        bounceUpDown: {
+          '0%, 100%': { transform: 'translateY(0) scale(0.6)' },
+          '50%': { transform: 'translateY(50px) scale(0.4)' },
+        },
+      },
       colors: {
+        gray: 'rgba(3, 3, 15, .5)',
         customBlue: '#26a0f8',
+        Bluehover: '#36a5f5',
         primary: 'var(--primary-color)',
         secondary: 'var(--secondary-color)',
-        transitionTimingFunction: {
-          'ease-out-custom': 'cubic-bezier(0.2, 0.8, 0.2, 1)',
-        },
-        transitionDuration: {
-          'slow': '2000ms', // 2 seconds for slower transition
-        },
-      }
-      ,
-      
+      },
+      transitionTimingFunction: {
+        'ease-out-custom': 'cubic-bezier(0.2, 0.8, 0.2, 1)',
+      },
+      transitionDuration: {
+        'slow': '2000ms',
+      },
       fontSize: {
-        'psize': '2.5em',      
-        'rh-size': '3.25em',    
+        'psize': '2.5em',
+        'rh-size': '3.25em',
         'client-size': '2.75em',
         'counter-size': '3.25em',
         'acy-size': '1.575em',
@@ -28,23 +37,23 @@ module.exports = {
         'circle-size': '11px',
         'service-size': '1.7rem',
         'services-size': '2.57rem',
-            'footer-size': '1rem'
-        
-
-        
+        'footer-size': '1rem',
+        'heading-size': '3.20rem'
+      },
+      borderWidth: {
+        'b': '1px',
       },
       spacing: {
         'customtop': '-20px',
         'left': '-40px',
-         'leftplay':"56px",
-         'darkheight':"15px",
-         'size':"40px",
-         'border':'1px',
-         'ph':'5px',
-         'pw':'20px',
-         'top':'1.5px'
-
-
+        'leftplay': "56px",
+        'darkheight': "15px",
+        'size': "40px",
+        'borderspace': '1px',
+        'ph': '5px',
+        'pw': '20px',
+        'top': '1.5px',
+        'circle': '9px'
       },
       minHeight: {
         'box-height': '299px', // Custom min-height
@@ -55,9 +64,8 @@ module.exports = {
       },
       gridTemplateColumns: {
         'cols-layout': '1fr 1fr 4fr 1fr 1fr',
-    
         'acc-cols': '0.5fr 1fr 1fr',
-        'acc-colres': ' 1fr '
+        'acc-colres': '1fr'
       },
       gridTemplateRows: {
         'rows-layout': '100px 100px 100px',

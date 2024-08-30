@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from "react";
 import { AuthContext, AuthProvider } from "../Context";
+import AnimatedCircle from "../Svgs/AnimatedCircle";
 
-import gsap from "gsap";
 
 const Hero = () => {
   const { name, count, setCount } = useContext(AuthContext);
@@ -30,12 +30,12 @@ const Hero = () => {
     }
   };
   return (
-    <div className="flex items-center justify-center gap-16 flex-col h-96 pt-40 pb-64 realtive">
+    <div className="flex items-center justify-center gap-16 flex-col h-96 pt-52 pb-60 realtive">
       <div
-        className="absolute w-4/6 max-h-96 rounded-md  bg-customBlue top-28 z-10 hidden"
+        className="absolute w-4/6 max-h-96 rounded-md   bg-customBlue top-28 z-10 hidden"
         ref={videobox}
       >
-        <div className="w-10 h-10 bg-white border-2  border-customBlue rounded-full flex justify-center items-center absolute right-2 top-2 cursor-pointer z-30">
+        <div className="w-10 h-10 bg-primary border-2  border-customBlue rounded-full flex justify-center items-center absolute right-2 top-2 cursor-pointer z-30">
           <i
             class="fa-solid fa-xmark fa-2xl  "
             ref={cross}
@@ -50,20 +50,46 @@ const Hero = () => {
           src="https://ronasit.com/img/home/showreel.mp4"
         ></video>
       </div>
-      <div className="">
-        <h1 className="flex items-center gap-1 text-4xl  lg:text-5xl font-medium flex-wrap">
-          <span className="  flex flex-col gap-3 py-2 px-3 items-center justify-center  relative ">
-            Design.
-          </span>
 
-          <span className=" flex flex-col py-2 px-3   items-center justify-center   border-gray-600 ">
-            Development.
+
+
+      <div className="">
+
+        <h1 className="flex items-center justify-start md:justify-center gap-7 md:gap-1 text-4xl lg:text-heading-size font-medium flex-wrap cursor-pointer px-4 ">
+          <span className="relative flex flex-col items-center justify-center">
+            Design.
+            <span
+              className="absolute inset-x-0 -bottom-3 md:-bottom-7 h-[11px] bg-current opacity-20 transition duration-300 hover:opacity-100"
+              style={{
+
+                mask: 'url("/")',
+                WebkitMask: 'url("https://ronasit.com/_next/static/media/underline-1.bd2f1d52.svg")',
+              }}
+            ></span>
           </span>
-          <span className="flex flex-col py-2 px-3 items-center justify-center ">
+          <span className="relative flex flex-col items-center justify-center ">
+            Development.
+            <span
+              className="absolute inset-x-0 -bottom-3 md:-bottom-7 h-[11px] bg-current opacity-20 transition duration-300 hover:opacity-100"
+              style={{
+                mask: 'url("/")',
+                WebkitMask: 'url("https://ronasit.com/_next/static/media/underline-2.0eafa3f9.svg")',
+              }}
+            ></span>
+          </span>
+          <span className="relative flex flex-col items-center justify-center">
             Maintenance.
-            <div className="flex justify-center w-48 align-center "></div>
+            <span
+              className="absolute inset-x-0 -bottom-3 md:-bottom-7 h-[11px] bg-current opacity-20 transition duration-300 hover:opacity-100"
+              style={{
+                mask: 'url("/")',
+                WebkitMask: 'url("https://ronasit.com/_next/static/media/underline-3.cf6fc523.svg")',
+              }}
+            ></span>
           </span>
         </h1>
+
+
       </div>
 
       <div className="relative w-40 h-40 flex items-center justify-center ">
@@ -77,6 +103,8 @@ const Hero = () => {
           viewBox="0 0 120 120"
         >
           <path
+
+            className="text-primary"
             id="text-path"
             d="M 60, 60
          m -45, 0
@@ -84,12 +112,14 @@ const Hero = () => {
          a 45,45 0 1,1 -90,0"
             fill="transparent"
           />
-          <text className="text-xs font-semibold  ">
+
+          <text className="text-xs font-semibold   fill-current  " >
             <textPath
               href="#text-path"
               startOffset="50%"
+              fill="fill-primary"
               textAnchor="middle"
-              className="tracking-widest font-normal text-circle-size "
+              className="tracking-widest font-normal text-circle-size  "
             >
               Watch our showreel • Watch our showreel •
             </textPath>
@@ -117,6 +147,8 @@ const Hero = () => {
           onClick={showmodel}
         ></i>
       </div>
+      <div className=" w-30 h-30 absolute right-5 bottom-7 lg:right-12">   <AnimatedCircle /> </div>
+
     </div>
   );
 };

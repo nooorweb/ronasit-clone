@@ -13,8 +13,8 @@ const AsCompany = () => {
 };
 const Review = () => {
   return (
-    <div className="md:px-20 px-4 pt-32 md:pt-0">
-      <div className="flex  mt-96 pt-80 md:pt-0    flex-col  items-center md:items-start  md:gap-4 md:flex-col lg:flex-row   lg:gap-28 font-medium  md:mt-40 ">
+    <div className="md:px-20 px-4 pt-32 md:pt-0 lg:mt-80">
+      <div className="flex  mt-96 pt-80 md:pt-0    flex-col  items-center md:items-start  md:gap-4  gap-20md:flex-col lg:flex-row   lg:gap-28 font-medium  md:mt-20 ">
         <h2 className="text-2xl font-medium mb-10">Numbers</h2>
         <div className="flex gap-12 flex-col  md:flex-row ">
           <div className="  max-w-60  text-center   md:text-left sm:pt-10 md:pt-0  ">
@@ -142,7 +142,7 @@ const Review = () => {
         </div>
       </div>
 
-      <div className="flex  flex-col gap-32  md:flex-row  font-medium px-16  items-center justify-center md:gap-2 lg:gap-12 mt-16 py-16    ">
+      <div className="flex  flex-col gap-32  md:flex-row  font-medium px-16  items-center justify-center md:justify-end md:gap-2 lg:gap-12 mt-16 py-16    ">
         <div className="    px-16   relative cursor-pointer ">
           <Feather />
 

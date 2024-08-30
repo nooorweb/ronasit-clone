@@ -1,8 +1,16 @@
 import React from "react";
 
+import useButtonEffect from "../Constants/BtnEffect";
+import { useRef } from "react";
+
+
+
 const Calculater = () => {
+  const Button=useRef(null)
+useButtonEffect(Button)
+ 
   return (
-    <div className=" flex justify-center items-justify py-16 mt-20   bg-customBlue ">
+    <div className=" flex justify-center items-justify py-16 mt-20 lg:mt-0   bg-customBlue ">
       <div className=" flex flex-col gap-7  text-center max-w-xl  text-white">
         <h1 className="text-5xl font-medium">MVP calculater</h1>
         <div className="text-center ">
@@ -14,7 +22,7 @@ const Calculater = () => {
           </p>
         </div>
 
-        <button className="border-2 py-5 rounded-full cursor-pointer bg-customBlue text-white mx-3 ">
+        <button ref={Button} className="border-b py-5 rounded-full cursor-pointer bg-customBlue  hover:bg-Bluehover  text-white mx-3 ">
           Start
         </button>
       </div>

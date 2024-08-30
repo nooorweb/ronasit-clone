@@ -17,7 +17,7 @@ const Service = () => {
           You may need our services if you want to:
         </p>
 
-        <div className="flex max-w-full   flex-col gap-12 lg:gap-5  justify-between pt-10  lg:w-9/12 ">
+        <div className="flex max-w-full   flex-col gap-12 lg:gap-5  justify-between  lg:w-9/12 ">
           <div
             className="flex  gap-4 lg:gap-12      items-center "
             data-aos="fade-up"

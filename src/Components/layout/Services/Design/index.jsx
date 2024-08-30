@@ -1,6 +1,7 @@
 import Aos from "aos";
 import React, { useEffect } from "react";
 
+import Button from "../../Button/Button";
 const Design = () => {
   useEffect(() => {
     Aos.init({
@@ -11,7 +12,7 @@ const Design = () => {
   return (
     <div className="md:px-20 px-4">
       <div
-        className="flex justify-between py-15 flex-col md:flex-row"
+        className="flex justify-between py-15  flex-col md:flex-row lg:mt-20"
         data-aos="fade-up"
       >
         <div className="flex flex-col gap-10">
@@ -21,15 +22,13 @@ const Design = () => {
           </h2>
         </div>
 
-        <div className=" mt-10   md:mt-32 max-w-2xl bg-gre flex flex-col gap-20">
+        <div className=" mt-10   md:mt-16 max-w-2xl bg-gre flex flex-col gap-20">
           <div className="   md:px-8 flex flex-col gap-10">
             <p className=" text-xl  md:text-2xl">
               work hard to create eye-catching and intuitive interface designs
               that provide users with an enjoyable experience.
             </p>
-            <button className="py-5 px-10 text-secondary rounded-full border-2 border-slate-400 w-fit hover:bg-customBlue hover:text-white transition-all duration-700 ease-in-out cursor-pointer">
-              View More
-            </button>
+            <Button />
           </div>
 
           <div

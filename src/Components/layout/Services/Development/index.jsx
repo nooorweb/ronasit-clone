@@ -1,6 +1,8 @@
 import React from "react";
 import Aos from "aos";
 import { useEffect } from "react";
+import Button from "../../Button/Button";
+
 
 const Developement = () => {
   useEffect(() => {
@@ -22,7 +24,7 @@ const Developement = () => {
           </h2>
         </div>
 
-        <div className="mt-10 md:mt-32  max-w-2xl bg-gre flex flex-col gap-20 ">
+        <div className="mt-10  md:mt-16  max-w-2xl bg-gre flex flex-col gap-20 ">
           <div className="md:px-8 flex flex-col gap-10">
             <p className="text-xl md:text-2xl">
               When working on a project, we not only establish scalable
@@ -30,9 +32,7 @@ const Developement = () => {
               provide a high level of data security.
             </p>
 
-            <button className="py-5 px-10   text-secondary rounded-full border-2 w-fit hover:bg-customBlue hover:text-white transition-all duration-700 ease-in-out cursor-pointer">
-              View More
-            </button>
+            <Button />
           </div>
 
           <div
